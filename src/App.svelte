@@ -86,7 +86,9 @@
     </p>
     <p>
         This page doesn’t do any checking about what image types your browser supports, so if you choose one of the
-        exotic ones and all the blurred images disappear, that’s why.
+        exotic ones and all the blurred images disappear, that’s why. It also reveals some problems around
+        non-standard aspect ratios — looks like it's wise to custom fit the blur scaling. (Same problem becomes
+        apparent when the images are displayed very large.)
     </p>
     <p>
         These photos were all taken by me at various points around the world. Consider them Creative Commons
