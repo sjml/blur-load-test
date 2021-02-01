@@ -62,8 +62,8 @@
     </svg>
 </a>
 
-<h1>Blur Load Tester</h1>
 <section class="explainer">
+    <h1>Blur Load Tester</h1>
     <p>
         I was intrigued by the way <a href="https://jmperezperez.com/medium-image-progressive-loading-placeholder/">
         Medium</a> and <a href="https://engineering.fb.com/2015/08/06/android/the-technology-behind-preview-photos/">
@@ -106,6 +106,16 @@
 <style>
     main {
         padding-bottom: 30px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    .explainer {
+        max-width: 1000px;
+        margin: 80px auto;
     }
 
     .github-corner:hover .octo-arm {

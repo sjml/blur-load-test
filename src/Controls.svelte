@@ -106,6 +106,7 @@
         font-size: small;
         padding-bottom: 5px;
         display: flex;
+        justify-content: center;
     }
 
     .params {

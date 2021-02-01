@@ -30,11 +30,11 @@
         const dispAspect = dispSize[0] / dispSize[1];
         if (img.aspect >= 1.0) {
             dispWidth = dispSize[0];
-            dispHeight = dispWidth / dispAspect;
+            dispHeight = dispWidth / img.aspect;
         }
         else {
             dispHeight = dispSize[1];
-            dispWidth = dispHeight / dispAspect;
+            dispWidth = dispHeight * img.aspect;
         }
 
         sourceString = getSourceString();
