@@ -14,7 +14,7 @@
     } from "./stores";
 
     async function getImgData(): Promise<ImageDataDescription> {
-        const imgDataRes = await fetch("/img/imageData.json");
+        const imgDataRes = await fetch("./img/imageData.json");
         if (!imgDataRes.ok) {
             return null;
         }
@@ -24,7 +24,7 @@
     }
 
     async function getEncodedImages(): Promise<{string: string}> {
-        const imgEncRes = await fetch(`/img/tiny/format_${$controlSettingsStore.tinyFormat}/quality_${$controlSettingsStore.tinyQuality}/size_${$controlSettingsStore.tinySize}/imageData.json`);
+        const imgEncRes = await fetch(`./img/tiny/format_${$controlSettingsStore.tinyFormat}/quality_${$controlSettingsStore.tinyQuality}/size_${$controlSettingsStore.tinySize}/imageData.json`);
         if (!imgEncRes.ok) {
             return null;
         }
@@ -35,7 +35,7 @@
     }
 
     async function getImgSizes(): Promise<object> {
-        const imgSizeRes = await fetch("/img/sizeReport.json");
+        const imgSizeRes = await fetch("./img/sizeReport.json");
         if (!imgSizeRes.ok) {
             return null;
         }

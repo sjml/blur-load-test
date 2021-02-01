@@ -18,7 +18,7 @@
             return `data:image/jpeg;base64,${$imageEncodedStore[fname]}`;
         }
         else {
-            return `/img/tiny/format_${$controlSettingsStore.tinyFormat}/`
+            return `./img/tiny/format_${$controlSettingsStore.tinyFormat}/`
                 + `quality_${$controlSettingsStore.tinyQuality}/`
                 + `size_${$controlSettingsStore.tinySize}/`
                 + fname;
@@ -86,7 +86,7 @@
     >
     <img
         class="true"
-        src="/img/normal/{$controlSettingsStore.normalSize}/{img.file}.jpg" alt="{img.file}"
+        src="./img/normal/{$controlSettingsStore.normalSize}/{img.file}.jpg" alt="{img.file}"
         width="{dispWidth}px" height="{dispHeight}px"
     />
     {#if showPlaceholder}
