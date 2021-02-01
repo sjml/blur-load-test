@@ -33,7 +33,7 @@
         <tr><td><strong>smallest</strong></td><td>{getDisplayByteCount(minSize)}</td></tr>
         <tr><td><strong>largest</strong></td><td>{getDisplayByteCount(maxSize)}</td></tr>
         <tr><td><strong>average</strong></td><td>{getDisplayByteCount(averageSize)}</td></tr>
-        <tr><td><strong>full set as base64</strong></td><td>{getDisplayByteCount($encodedImageResponseSize)}</td></tr>
+        <tr><td><strong>gzipped full set as base64</strong></td><td>{getDisplayByteCount($encodedImageResponseSize)}</td></tr>
     </table>
 </div>
 
