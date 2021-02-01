@@ -1,0 +1,159 @@
+{
+  "tinySizes": [
+    16,
+    24,
+    32,
+    42,
+    64
+  ],
+  "normalSizes": [
+    "1920x1080",
+    "1280x720",
+    "640x480",
+    "320x240"
+  ],
+  "qualities": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70
+  ],
+  "formats": [
+    "jpg",
+    "webp",
+    "jp2",
+    "jxr"
+  ],
+  "inputImages": [
+    {
+      "file": "IMG_3770.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_3801.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_3845.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_3918.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_3921.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_4022.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_4077.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_4236.jpeg",
+      "width": 2448,
+      "height": 3264,
+      "aspect": 0.75
+    },
+    {
+      "file": "IMG_5337.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_5686.jpeg",
+      "width": 2448,
+      "height": 3264,
+      "aspect": 0.75
+    },
+    {
+      "file": "IMG_5741.jpeg",
+      "width": 2448,
+      "height": 3264,
+      "aspect": 0.75
+    },
+    {
+      "file": "IMG_5761.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_6738.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_6860.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_7107.jpeg",
+      "width": 2590,
+      "height": 1088,
+      "aspect": 2.38051
+    },
+    {
+      "file": "IMG_7201.jpeg",
+      "width": 5742,
+      "height": 2458,
+      "aspect": 2.33605
+    },
+    {
+      "file": "IMG_7270.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_7433.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    },
+    {
+      "file": "IMG_8007.jpeg",
+      "width": 6942,
+      "height": 2396,
+      "aspect": 2.89733
+    },
+    {
+      "file": "IMG_8049.jpeg",
+      "width": 3264,
+      "height": 2448,
+      "aspect": 1.33333
+    }
+  ]
+}
