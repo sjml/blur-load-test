@@ -15,7 +15,24 @@
     function getSourceString(): string {
         const fname = `${img.file}.${$controlSettingsStore.tinyFormat}`;
         if ($controlSettingsStore.useEncodedData) {
-            return `data:image/jpeg;base64,${$imageEncodedStore[fname]}`;
+            let mime = "";
+            switch ($controlSettingsStore.tinyFormat) {
+                case "jpg":
+                    mime = "image/jpeg";
+                    break;
+                case "webp":
+                    mime = "image/webp";
+                    break;
+                case "jp2":
+                    mime = "image/jp2";
+                    break;
+                case "jxr":
+                    mime = "image/jxr";
+                    break;
+                default:
+                    break;
+            }
+            return `data:${mime};base64,${$imageEncodedStore[fname]}`;
         }
         else {
             return `./img/tiny/format_${$controlSettingsStore.tinyFormat}/`
@@ -25,9 +42,12 @@
         }
     }
 
+    imageEncodedStore.subscribe(() => {
+        sourceString = getSourceString();
+    });
+
     $: {
         const dispSize = $controlSettingsStore.normalSize.split("x").map(Number);
-        const dispAspect = dispSize[0] / dispSize[1];
         if (img.aspect >= 1.0) {
             dispWidth = dispSize[0];
             dispHeight = dispWidth / img.aspect;

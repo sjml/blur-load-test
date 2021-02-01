@@ -49,6 +49,11 @@
              getEncodedImages().then(encodeds => $imageEncodedStore = encodeds);
         });
     getImgSizes().then(sizes => $imageSizeStore = sizes);
+
+    controlSettingsStore.subscribe((_) => {
+        getEncodedImages().then(encodeds => $imageEncodedStore = encodeds);
+    });
+
 </script>
 
 <a
