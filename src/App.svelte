@@ -69,8 +69,8 @@
 <section class="explainer">
 <h1>Blur Load Tester</h1>
     <p>
-        I was intrigued by the way <a href="https://jmperezperez.com/medium-image-progressive-loading-placeholder/">
-        Medium</a> and <a href="https://engineering.fb.com/2015/08/06/android/the-technology-behind-preview-photos/">
+        I was intrigued by the way <a href="https://jmperezperez.com/medium-image-progressive-loading-placeholder/" target="_">
+        Medium</a> and <a href="https://engineering.fb.com/2015/08/06/android/the-technology-behind-preview-photos/" target="_">
         Facebook</a> use blurred preview images while the larger versions are loading. It’s pretty clever — with a
         small enough preview image, it becomes reasonable to send it as a data element in the HTML itself instead of
         triggering another load. And with enough blurring, the artifacts from the super small image file aren’t visible.
@@ -99,7 +99,7 @@
             <li>
                 This page doesn’t do any checking about what image types your browser supports, so if you choose one
                 of the exotic ones and all the blurred images disappear, that’s why. (The usual solution to that
-                problem, <a href="https://caniuse.com/srcset"><code>srcset</code></a>, doesn’t work with data attributes,
+                problem, <a href="https://caniuse.com/srcset" target="_"><code>srcset</code></a>, doesn’t work with data attributes,
                 understandably.)
             </li>
             <li>
@@ -120,8 +120,8 @@
         </ul>
     </section>
     <p>
-        These photos were all taken by me at various points around the world. Consider them Creative Commons
-        licensed (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>), I guess.
+        These photos were all taken <a href="https://shaneliesegang.com" target="_">by me</a> at various points around the world. Consider them Creative Commons
+        licensed (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_">CC BY-NC-SA 4.0</a>), I guess.
     </p>
 </section>
 <hr/>
