@@ -92,6 +92,11 @@
         Caveats:
         <ul>
             <li>
+                Obviously on an actual web page the placeholder preview would disappear once the full image was
+                loaded, but the whole point here is to look at visual quality of the placeholders, so they
+                stick around with a multitude of different ways to toggle them.
+            </li>
+            <li>
                 This page doesn’t do any checking about what image types your browser supports, so if you choose one
                 of the exotic ones and all the blurred images disappear, that’s why. (The usual solution to that
                 problem, <a href="https://caniuse.com/srcset"><code>srcset</code></a>, doesn’t work with data attributes,
