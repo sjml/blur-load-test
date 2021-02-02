@@ -93,11 +93,6 @@
 
 
 <style>
-    hr {
-        border-top: 1px solid rgb(134, 134, 134);
-        border-bottom: none;
-    }
-
     .panel {
         z-index: 200;
         background-color: white;

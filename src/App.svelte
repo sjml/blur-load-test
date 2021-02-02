@@ -3,7 +3,6 @@
 
     import Album from "./Album.svelte";
     import Controls from "./Controls.svelte";
-    import Metrics from "./Metrics.svelte";
 
     import {
         controlSettingsStore,
@@ -28,7 +27,7 @@
         if (!imgEncRes.ok) {
             return null;
         }
-        $encodedImageResponseSize = parseInt(imgEncRes.headers.get('Content-Length'));
+        $encodedImageResponseSize = parseInt(imgEncRes.headers.get("Content-Length"));
         const encodedImages = await imgEncRes.json();
 
         return encodedImages;
@@ -68,7 +67,7 @@
 </a>
 
 <section class="explainer">
-    <h1>Blur Load Tester</h1>
+<h1>Blur Load Tester</h1>
     <p>
         I was intrigued by the way <a href="https://jmperezperez.com/medium-image-progressive-loading-placeholder/">
         Medium</a> and <a href="https://engineering.fb.com/2015/08/06/android/the-technology-behind-preview-photos/">
@@ -89,17 +88,38 @@
         could save an additional 20 bytes or so… I’m not quite that interested in hyper-optimization, but of course
         there’s almost always a little more space to trim.
     </p>
-    <p>
-        This page doesn’t do any checking about what image types your browser supports, so if you choose one of the
-        exotic ones and all the blurred images disappear, that’s why. It also reveals some problems around
-        non-standard aspect ratios — looks like it's wise to custom fit the blur scaling. (Same problem becomes
-        apparent when the images are displayed very large.)
-    </p>
+    <section>
+        Caveats:
+        <ul>
+            <li>
+                This page doesn’t do any checking about what image types your browser supports, so if you choose one
+                of the exotic ones and all the blurred images disappear, that’s why. (The usual solution to that
+                problem, <a href="https://caniuse.com/srcset"><code>srcset</code></a>, doesn’t work with data attributes,
+                understandably.)
+            </li>
+            <li>
+                Larger display sizes usually need a stronger blur to help cover the compression artifacts, and thus
+                reveal some of the problems around non-standard aspect ratios. Looks like the blur scaling might need
+                to be custom-fitted.
+                <ul><li>
+                    (I would guess this is why Medium does their version the blur in a canvas element. Might try to
+                    mock up a version that does that. But maybe not; I was more interested in testing different
+                    compression strategies for a longer-term project that I kind of want to get back to.)
+                </li></ul>
+            </li>
+            <li>
+                The controls take up too much space on mobile. Sorry; this is meant more for desktop use where
+                you can get a good look at the visual tradeoffs, not on mobile where the data tradeoffs are more
+                useful. ¯\_(ツ)_/¯
+            </li>
+        </ul>
+    </section>
     <p>
         These photos were all taken by me at various points around the world. Consider them Creative Commons
         licensed (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>), I guess.
     </p>
 </section>
+<hr/>
 
 <main>
     {#if $imageDataStore}
@@ -122,7 +142,14 @@
 
     .explainer {
         max-width: 1000px;
-        margin: 80px auto;
+        margin: 80px auto 10px auto;
+    }
+
+    .github-corner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1000;
     }
 
     .github-corner:hover .octo-arm {
