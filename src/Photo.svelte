@@ -10,7 +10,6 @@
     let sourceString: string = "";
     let showPlaceholder: boolean = true;
     let shiftDown: boolean = false;
-    let mouseInside: boolean = false;
 
     function getSourceString(): string {
         const fname = `${img.file}.${$controlSettingsStore.tinyFormat}`;
@@ -71,8 +70,7 @@
             case "hold shift":
                 showPlaceholder = !shiftDown;
                 break;
-            case "rollover":
-                showPlaceholder = !mouseInside;
+            case "click":
                 break;
             default:
                 break;
@@ -90,19 +88,15 @@
         }
     }
 
-    function mouseenter(event: MouseEvent) {
-        mouseInside = true;
-    }
-    function mouseleave(event: MouseEvent) {
-        mouseInside = false;
+    function clickHandle(event: MouseEvent) {
+        showPlaceholder = !showPlaceholder;
     }
 </script>
 
 <div
     class="photo"
     style="width: {dispWidth}px; height: {dispHeight}px;"
-    on:mouseenter={mouseenter}
-    on:mouseleave={mouseleave}
+    on:click={clickHandle}
     >
     <img
         class="true"

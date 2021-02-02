@@ -38,9 +38,10 @@ Caveats:
         But maybe not; I was more interested in testing different
         compression strategies for a longer-term project that I kind of
         want to get back to.)
--   The controls take up too much space on mobile. Sorry; this is meant
+-   The controls take up too much space on phones. Sorry; this is meant
     more for desktop use where you can get a good look at the visual
     tradeoffs, not on mobile where the data tradeoffs are more useful.
+    ¯\\\_(ツ)\_/¯
 
 These photos were all taken by me at various points around the world.
 Consider them Creative Commons licensed ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)), I guess.

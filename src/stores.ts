@@ -20,7 +20,7 @@ export const controlSettingsStore = writable({
     tinySize: 32,
     tinyQuality: 40,
     normalSize: "320x240",
-    placeholderMode: "rollover",
+    placeholderMode: "click",
     placeholderCSS: "filter: blur(0.5em); transform: scale(1.3);",
     useEncodedData: true,
 });

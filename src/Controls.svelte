@@ -58,8 +58,8 @@
             <div>
                 Placeholder Mode:
                 <label>
-                    <input type=radio value="rollover" bind:group={$controlSettingsStore.placeholderMode}>
-                    rollover
+                    <input type=radio value="click" bind:group={$controlSettingsStore.placeholderMode}>
+                    click/tap toggle
                 </label>
                 <label>
                     <input type=radio value="always on" bind:group={$controlSettingsStore.placeholderMode}>
